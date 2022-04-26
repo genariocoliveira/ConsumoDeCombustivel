@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Calculo de combustível</title>
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo">
+            <label for="km">Qual a distância, Ida e Volta?</label>
+            <input type="text" onkeyup="mascara()" id="km" placeholder="km"/> <br/>
+            <label for="km">Quantos km por litro?</label>
+            <input type="text" id="litro" placeholder="km/L"/> <br/>
+            <label for="km">Preço por litro: R$</label>
+            <input type="text" id="valor" placeholder="R$"/> <br/>
+            <button class="btn1" onclick="somar()">Calcular</button>
+            <button class="btn2" disabled onclick="limpar()">Limpar</button>
+            <div class="fundo">
+                <p id="res">Resultado...</p>
+            </div>
+        </div>
+        <footer class="roda-pe">
+            <p>Todos os direitos reservados Genário Carneiro</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
